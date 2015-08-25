@@ -6,7 +6,7 @@ setup(
     description='A model for storing GeoNames data, and finding "surrounding suburbs".',
     author='Curtis Maloney',
     author_email='curtis@tinbrain.net',
-    url='https://github.org/funkybob/django-locals/',
+    url='https://github.com/funkybob/django-locals/',
     packages=find_packages(),
     zip_safe=False,
     install_requires=[
