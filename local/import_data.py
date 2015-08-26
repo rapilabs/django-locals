@@ -60,4 +60,3 @@ def import_data(path, Admin, Location):
         else:
             print "[%s] Failed: %s\n" % (count, form.errors,)
     fin.close()
-
