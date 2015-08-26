@@ -8,6 +8,7 @@ import csv
 class ImportForm(forms.ModelForm):
     class Meta:
         model = models.Location
+        exclude = []
 
 # Field names for GeoNames download format
 field_names = [
