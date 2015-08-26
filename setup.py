@@ -8,6 +8,10 @@ setup(
     author_email='curtis@tinbrain.net',
     url='https://github.com/funkybob/django-locals/',
     packages=find_packages(),
+    include_package_data = True,
+    package_data = {
+        '': ['*.txt'],
+    },
     zip_safe=False,
     install_requires=[
         'Django>=1.8',
