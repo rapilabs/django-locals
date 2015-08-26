@@ -13,7 +13,7 @@ field_names = [
     'admin_code2',
     'admin_name3',
     'admin_code3',
-    'lattitude',
+    'latitude',
     'longitude',
     'accuracy',
 ]
@@ -53,7 +53,7 @@ def import_data(path, Admin, Location):
             )
             row['admin3'] = rec.id
 
-        row['location'] = 'POINT(%(longitude)s %(lattitude)s)' % row
+        row['location'] = 'POINT(%(longitude)s %(latitude)s)' % row
         form = ImportForm(row)
         if form.is_valid():
             form.save()
